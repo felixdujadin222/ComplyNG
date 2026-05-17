@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComplyNG — Nigeria's Compliance SaaS Platform | 7 Products, 1 Platform</title>
+    <meta name="description" content="Track regulatory deadlines, generate compliance documents, avoid fines. Powering 200+ Nigerian businesses. Powered by Claude AI.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #0a0a1a 0%, #1a1a2e 100%); }
+        .accent-gradient { background: linear-gradient(90deg, #00d4ff, #7c3aed); }
+        .product-card:hover { transform: translateY(-4px); }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen">
+    <!-- Announcement Banner -->
+    <div class="bg-gradient-to-r from-cyan-500 to-purple-600 text-white text-center py-2 text-sm font-medium">
+        🚀 Now in Phase 1: SchoolGuard & LexTrack live. Join 40+ Nigerian businesses already on the platform.
+    </div>
+
+    <!-- Header -->
+    <header class="border-b border-white/10 sticky top-0 bg-[#0a0a1a]/90 backdrop-blur z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl accent-gradient flex items-center justify-center">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                    </svg>
+                </div>
+                <div>
+                    <span class="text-xl font-bold text-white">ComplyNG</span>
+                    <span class="text-xs text-gray-400 block">Compliance made simple</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="#products" class="text-gray-300 hover:text-white transition">Products</a>
+                <a href="#about" class="text-gray-300 hover:text-white transition">About</a>
+                <a href="#pricing" class="text-gray-300 hover:text-white transition">Pricing</a>
+                <a href="#contact" class="text-gray-300 hover:text-white transition">Contact</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <span class="hidden sm:flex items-center gap-2 text-sm text-green-400">
+                    <span class="w-2 h-2 bg-green-400 rounded-full pulse"></span>
+                    Powered by Claude AI
+                </span>
+                <a href="https://wa.me/2347000000000" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Chat
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-24 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                Nigerian Businesses Need <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">ComplyNG</span>
+            </h1>
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                7 industry-specific compliance products. AI-powered document generation. WhatsApp alerts. One platform.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <a href="#products" class="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-400 hover:to-purple-500 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all">
+                    View All Products
+                </a>
+                <a href="#contact" class="border border-white/30 hover:bg-white/10 text-white px-8 py-4 rounded-xl text-lg font-medium transition-all">
+                    Book a Demo
+                </a>
+            </div>
+            <div class="flex flex-wrap justify-center gap-8 text-gray-400">
+                <div class="flex items-center gap-2">
+                    <span class="text-2xl font-bold text-white">200+</span>
+                    <span>Clients</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="text-2xl font-bold text-white">7</span>
+                    <span>Products</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="text-2xl font-bold text-white">₦5M+</span>
+                    <span>MRR Target</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 px-6 bg-white/5">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-cyan-400 mb-2">60K+</div>
+                    <div class="text-gray-400">Private Schools</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-purple-400 mb-2">170K+</div>
+                    <div class="text-gray-400">Registered Lawyers</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-green-400 mb-2">500K+</div>
+                    <div class="text-gray-400">Landlords</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-yellow-400 mb-2">3K+</div>
+                    <div class="text-gray-400">Fintech Startups</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-cyan-400 font-semibold">7 PRODUCTS</span>
+                <h2 class="text-4xl font-bold text-white mt-2">One Compliance Platform</h2>
+                <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Industry-specific tools that do the actual work — powered by Claude AI</p>
+            </div>
+
+            <!-- Phase 1 Products -->
+            <div class="mb-12">
+                <h3 class="text-xl font-semibold text-gray-400 mb-6 flex items-center gap-2">
+                    <span class="w-8 h-8 bg-cyan-500/20 rounded-lg flex items-center justify-center text-cyan-400 text-sm">1</span>
+                    Phase 1 — Live Now
+                </h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- SchoolGuard -->
+                    <div class="bg-white/5 border border-white/10 rounded-2xl p-8 product-card transition-all hover:border-cyan-500/50">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="w-14 h-14 bg-cyan-500/20 rounded-xl flex items-center justify-center">
+                                <svg class="w-7 h-7 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                            </div>
+                            <span class="bg-green-500/20 text-green-400 text-xs px-3 py-1 rounded-full">LIVE</span>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white mb-2">SchoolGuard</h4>
+                        <p class="text-gray-400 mb-4">TRCN compliance tracker for private schools. Meet the 75% deadline by December 2026.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-xs bg-cyan-500/20 text-cyan-400 px-2 py-1 rounded">TRCN</span>
+                            <span class="text-xs bg-purple-500/20 text-purple-400 px-2 py-1 rounded">WAEC</span>
+                            <span class="text-xs bg-green-500/20 text-green-400 px-2 py-1 rounded">CAC</span>
+                        </div>
+                        <a href="schoolguard-waitlist.html" class="text-cyan-400 font-medium hover:underline">View Product →</a>
+                    </div>
+
+                    <!-- LexTrack -->
+                    <div class="bg-white/5 border border-white/10 rounded-2xl p-8 product-card transition-all hover:border-purple-500/50">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="w-14 h-14 bg-purple-500/20 rounded-xl flex items-center justify-center">
+                                <svg class="w-7 h-7 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg>
+                            </div>
+                            <span class="bg-green-500/20 text-green-400 text-xs px-3 py-1 rounded-full">LIVE</span>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white mb-2">LexTrack</h4>
+                        <p class="text-gray-400 mb-4">Lawyer compliance platform with AI contract analysis. Never miss CAC returns again.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-xs bg-purple-500/20 text-purple-400 px-2 py-1 rounded">CAC</span>
+                            <span class="text-xs bg-cyan-500/20 text-cyan-400 px-2 py-1 rounded">Courts</span>
+                            <span class="text-xs bg-yellow-500/20 text-yellow-400 px-2 py-1 rounded">AI Contracts</span>
+                        </div>
+                        <a href="lextrack-waitlist.html" class="text-purple-400 font-medium hover:underline">View Product →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 2 Products -->
+            <div class="mb-12">
+                <h3 class="text-xl font-semibold text-gray-400 mb-6 flex items-center gap-2">
+                    <span class="w-8 h-8 bg-orange-500/20 rounded-lg flex items-center justify-center text-orange-400 text-sm">2</span>
+                    Phase 2 — Coming Soon
+                </h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white/5 border border-white/10 rounded-2xl p-6 product-card transition-all hover:border-orange-500/50">
+                        <div class="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">EstateCheck</h4>
+                        <p class="text-gray-400 text-sm mb-3">LASRERA licensing, tenancy agreements, rent tracking for estate agents.</p>
+                        <span class="text-xs text-orange-400">Month 7</span>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded-2xl p-6 product-card transition-all hover:border-orange-500/50">
+                        <div class="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4 4"/></svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">FleetPulse</h4>
+                        <p class="text-gray-400 text-sm mb-3">Driver licences, vehicle roadworthiness, WhatsApp driver bot for logistics.</p>
+                        <span class="text-xs text-orange-400">Month 9</span>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded-2xl p-6 product-card transition-all hover:border-orange-500/50">
+                        <div class="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">ClinicShield</h4>
+                        <p class="text-gray-400 text-sm mb-3">MDCN licences, HEFAMAA inspections, NDPA compliance for clinics.</p>
+                        <span class="text-xs text-orange-400">Month 11</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 3 Products -->
+            <div>
+                <h3 class="text-xl font-semibold text-gray-400 mb-6 flex items-center gap-2">
+                    <span class="w-8 h-8 bg-yellow-500/20 rounded-lg flex items-center justify-center text-yellow-400 text-sm">3</span>
+                    Phase 3 — 2026
+                </h3>
+                <div class="grid md:grid-cols-2 gap-6 max-w-2xl">
+                    <div class="bg-white/5 border border-white/10 rounded-2xl p-6 product-card transition-all hover:border-yellow-500/50">
+                        <div class="w-12 h-12 bg-yellow-500/20 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">HotelComply</h4>
+                        <p class="text-gray-400 text-sm mb-3">Fire safety, tourism licence, VAT filing for hotels and guesthouses.</p>
+                        <span class="text-xs text-yellow-400">Month 13</span>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded-2xl p-6 product-card transition-all hover:border-yellow-500/50">
+                        <div class="w-12 h-12 bg-yellow-500/20 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M3 21h18c.217 0 .393-.143.468-.337.091-.236.074-.577-.04-.802-.166-.33-.465-.546-.797-.662-.19-.067-.395-.101-.6-.101-.217 0-.393.143-.468.337-.091.236-.074.577.04.802.166.33.465.546.797.662.19.067.395.101.6.101z"/></svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">FintechReady</h4>
+                        <p class="text-gray-400 text-sm mb-3">CBN cybersecurity audits, NDPA GAID, AML/KYC for fintech startups.</p>
+                        <span class="text-xs text-yellow-400">Month 15</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 bg-white/5">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="text-cyan-400 font-semibold">ABOUT</span>
+                    <h2 class="text-4xl font-bold text-white mt-2 mb-6">Why ComplyNG Exists</h2>
+                    <p class="text-gray-300 mb-4">
+                        Nigerian businesses operate in one of the world's most heavily regulated environments — yet no affordable software exists to help them stay compliant.
+                    </p>
+                    <p class="text-gray-300 mb-6">
+                        Large companies have compliance departments. SMEs have nothing. We built ComplyNG to change that — every Nigerian business deserves access to enterprise-grade compliance tools.
+                    </p>
+                    <div class="flex items-center gap-4 p-4 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 rounded-xl border border-white/10">
+                        <div class="w-12 h-12 accent-gradient rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-semibold">Powered by Claude AI</h4>
+                            <p class="text-gray-400 text-sm">Every product uses Anthropic's Claude for document generation, analysis, and reporting</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white/5 border border-white/10 rounded-xl p-6 text-center">
+                        <div class="text-3xl font-bold text-cyan-400 mb-2">7</div>
+                        <div class="text-gray-400">Vertical Products</div>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded-xl p-6 text-center">
+                        <div class="text-3xl font-bold text-purple-400 mb-2">WhatsApp</div>
+                        <div class="text-gray-400">First Notifications</div>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded-xl p-6 text-center">
+                        <div class="text-3xl font-bold text-green-400 mb-2">AI</div>
+                        <div class="text-gray-400">Document Generation</div>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded-xl p-6 text-center">
+                        <div class="text-3xl font-bold text-yellow-400 mb-2">CaaS</div>
+                        <div class="text-gray-400">Premium Advisory</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-cyan-400 font-semibold">PRICING</span>
+                <h2 class="text-4xl font-bold text-white mt-2">Simple, Transparent Pricing</h2>
+                <p class="text-gray-400 mt-4">Every product follows the same 3-tier model</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-8">
+                    <h3 class="text-xl font-semibold text-white mb-2">Standard</h3>
+                    <div class="text-3xl font-bold text-white mb-4">₦20K<span class="text-lg text-gray-400 font-normal">/mo</span></div>
+                    <ul class="space-y-3 text-gray-300 mb-8">
+                        <li>✓ Core features</li>
+                        <li>✓ Dashboard access</li>
+                        <li>✓ WhatsApp alerts</li>
+                        <li>✓ Email support</li>
+                    </ul>
+                    <a href="#contact" class="block text-center bg-white/10 hover:bg-white/20 text-white py-3 rounded-lg font-medium transition-all">Get Started</a>
+                </div>
+                <div class="bg-gradient-to-b from-cyan-500/20 to-purple-500/20 border border-cyan-500/30 rounded-2xl p-8 relative">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-cyan-500 to-purple-600 text-white px-4 py-1 rounded-full text-sm font-medium">Most Popular</div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Professional</h3>
+                    <div class="text-3xl font-bold text-white mb-4">₦40K<span class="text-lg text-gray-400 font-normal">/mo</span></div>
+                    <ul class="space-y-3 text-gray-300 mb-8">
+                        <li>✓ Everything in Standard</li>
+                        <li>✓ Unlimited features</li>
+                        <li>✓ Claude AI reports</li>
+                        <li>✓ Priority support</li>
+                    </ul>
+                    <a href="#contact" class="block text-center bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-400 hover:to-purple-500 text-white py-3 rounded-lg font-medium transition-all">Get Started</a>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-8">
+                    <h3 class="text-xl font-semibold text-white mb-2">CaaS Premium</h3>
+                    <div class="text-3xl font-bold text-white mb-4">₦120K<span class="text-lg text-gray-400 font-normal">/mo</span></div>
+                    <ul class="space-y-3 text-gray-300 mb-8">
+                        <li>✓ Everything in Professional</li>
+                        <li>✓ Quarterly advisory call</li>
+                        <li>✓ Document drafting</li>
+                        <li>✓ Priority WhatsApp</li>
+                    </ul>
+                    <a href="#contact" class="block text-center bg-white/10 hover:bg-white/20 text-white py-3 rounded-lg font-medium transition-all">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-white/5">
+        <div class="max-w-2xl mx-auto text-center">
+            <span class="text-cyan-400 font-semibold">CONTACT</span>
+            <h2 class="text-4xl font-bold text-white mt-2 mb-6">Let's Get Started</h2>
+            <p class="text-gray-400 mb-8">Ready to simplify your compliance? Chat with us on WhatsApp or book a demo call.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <a href="https://wa.me/2347000000000" class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl text-lg font-semibold flex items-center justify-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Chat on WhatsApp
+                </a>
+                <a href="mailto:hello@complyng.com" class="border border-white/30 hover:bg-white/10 text-white px-8 py-4 rounded-xl text-lg font-medium transition-all">
+                    Book a Demo
+                </a>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-6 text-gray-400">
+                <span class="flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-9 3h8a2 2 0 012 2v8a2 2 0 01-2 2h-8a2 2 0 01-2-2V9a2 2 0 012-2z"/></svg>
+                    hello@complyng.com
+                </span>
+                <span class="flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    +234 700 000 0000
+                </span>
+                <span class="flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    Lagos, Nigeria
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg accent-gradient flex items-center justify-center">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                </div>
+                <span class="text-lg font-bold text-white">ComplyNG</span>
+            </div>
+            <div class="flex items-center gap-4 text-sm text-gray-400">
+                <span>© 2026 ComplyNG. All rights reserved.</span>
+                <span>•</span>
+                <span class="flex items-center gap-2">
+                    <span class="w-2 h-2 bg-green-400 rounded-full"></span>
+                    Powered by Claude AI (Anthropic)
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
